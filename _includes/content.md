@@ -8,20 +8,20 @@ _If you see anything here that even remotely interests you, I encourage you to t
 
 #### Things I want to do
 * make a show for [channel101](http://channel101.com)
-* hack my Kinect to make music, visualizations, or other cool things.
+* hack my Kinect to make [music](http://www.youtube.com/watch?v=k-ZLZ9GLLNw), [visualizations](http://www.youtube.com/watch?v=_woNBiIyOKI), or [other cool things](http://www.youtube.com/results?search_query=kinect+processing).
 * take pictures and videos or people, places and things.
-* hack my mindflex duel game and do something interesting with the data.
+* hack my [mindflex duel game](http://www.amazon.com/Mattel-T8498-Mindflex-Duel-Game/dp/B004GHNFKK) and do something [interesting](http://frontiernerds.com/brain-hack) with the data.
 * drum or make music with a band
 * take a dance class
 * take a yoga class
 * take a parkour class
 
 #### Resources
-* Wacom tablet
-* Canon 7D camera (takes pictures and video)
+* [Wacom tablet](http://www.amazon.com/Wacom-Bamboo-Create-Tablet-CTH670/dp/B005HGBF9W/)
+* [Canon 7D camera](http://www.youtube.com/watch?v=2cFS83r3c3U) (takes pictures and video)
 * photo studio with flash setup
-* kinect sensor
-* mindflex sensor
+* [kinect sensor](http://www.amazon.com/Kinect-Sensor-Adventures-Xbox-360/dp/B002BSA298/)
+* [mindflex sensor](http://www.amazon.com/Mattel-T8498-Mindflex-Duel-Game/dp/B004GHNFKK)
 * random midi controllers
 * circular saw
 * drill
