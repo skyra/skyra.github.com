@@ -10,12 +10,6 @@
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/layout.css" rel="stylesheet">
-    
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -26,66 +20,74 @@
   </head>
 
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="http://skyra.github.com/">skyra</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="/blog">Blog</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <div id="wrap">
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="http://skyra.github.com/">skyra</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
+
+      <div class="container">
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span3">
+              <a id="avatar" href="/"></a>
+
+              <ul id="social">
+                <li>
+                  <a href="#" id="sidebar-call" class="icon-phone-sign" title="Give me a call" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Call']);"></a>
+                </li>
+
+                <li>
+                  <a href="https://plus.google.com/104703535905863588406" id="sidebar-google-plus" class="icon-google-plus-sign" title="Find me on Google+" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'GooglePlus']);"></a>
+                </li>
+
+                <li>
+                  <a href="http://twitter.com/cketcham" id="sidebar-twitter" class="icon-twitter-sign" title="You should follow me" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Twitter']);"></a>
+                </li>
+
+                <li>
+                  <a href="http://github.com/cketcham" id="sidebar-github" class="icon-github" title="I share and fork code here" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Github']);"></a>
+                </li>
+              </ul>
+            
+              <div id="call-widget" style="display: none">
+                <object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=6735a6ed31f0f433fc7f5742a9dc8269864f128e&style=0" /></object>
+              </div>
+
+              <ul id="me">
+                <li>Cameron Ketcham</span></li>
+                <li class="gray">Lets do something!</li>
+              </ul>
+            </div>
+            <div class="span9">
+              {{content}}
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- /container -->
+      <div id="push"></div>
     </div>
 
-    <div class="container">
-
-      <div class="container-fluid">
-        <div class="row-fluid">
-          <div class="span3">
-            <a id="avatar" href="/"></a>
-
-            <ul id="social">
-              <li>
-                <a href="#" id="sidebar-call" class="icon-phone-sign" title="Give me a call" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Call']);"></a>
-              </li>
-
-              <li>
-                <a href="https://plus.google.com/104703535905863588406" id="sidebar-google-plus" class="icon-google-plus-sign" title="Find me on Google+" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'GooglePlus']);"></a>
-              </li>
-
-              <li>
-                <a href="http://twitter.com/cketcham" id="sidebar-twitter" class="icon-twitter-sign" title="You should follow me" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Twitter']);"></a>
-              </li>
-
-              <li>
-                <a href="http://github.com/cketcham" id="sidebar-github" class="icon-github" title="I share and fork code here" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Github']);"></a>
-              </li>
-            </ul>
-            
-            <div id="call-widget" style="display: none">
-              <object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=6735a6ed31f0f433fc7f5742a9dc8269864f128e&style=0" /></object>
-            </div>
-
-            <ul id="me">
-              <li>Cameron Ketcham</span></li>
-              <li class="gray">Lets do something!</li>
-            </ul>
-          </div>
-          <div class="span9">
-            {{content}}
-          </div>
+    <div id="footer">
+        <div class="container">
+            <p class="muted credit">skyra ideas by Cameron Ketcham.</p>
         </div>
-      </div>
-
-    </div> <!-- /container -->
+    </div>
 
     <!-- Le javascript
     ================================================== -->
