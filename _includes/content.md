@@ -8,7 +8,7 @@ _If you see anything here that even remotely interests you, I encourage you to t
 
 #### Things I want to do
 * make a show for [channel101](http://channel101.com)
-* hack my Kinect to make [music](http://www.youtube.com/watch?v=k-ZLZ9GLLNw), [visualizations](http://www.youtube.com/watch?v=_woNBiIyOKI), or [other cool things](http://www.youtube.com/results?search_query=kinect+processing).
+* hack my Kinect to make [music](http://www.youtube.com/watch?v=k-ZLZ9GLLNw), [visualizations](http://www.youtube.com/watch?v=_woNBiIyOKI), [3d motion capture](http://kinecttopin.fox-gieg.com/kinecttopin/kinecttopin-installation/), or [other cool things](http://www.youtube.com/results?search_query=kinect+processing).
 * take pictures and videos or people, places and things.
 * hack my [mindflex duel game](http://www.amazon.com/Mattel-T8498-Mindflex-Duel-Game/dp/B004GHNFKK) and do something [interesting](http://frontiernerds.com/brain-hack) with the data.
 * drum or make music with a band
