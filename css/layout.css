@@ -1,0 +1,42 @@
+#avatar {
+  background-image: url('http://www.gravatar.com/avatar/715006648eff9b58c9fa75096b775691?s=134');
+  background-size: cover;
+  height: 134px;
+  width: 134px;
+  display: block;
+  border-radius: 10%;
+  margin-bottom: 8px;
+  border: 1px solid #333;
+  opacity: 0.9;
+  -webkit-transition:all 500ms ease-in;
+  -moz-transition:all 500ms ease-in;
+  -o-transition:all 500ms ease-in;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 10px 0px;
+  list-style: none outside;
+}
+
+#social li {
+  display: inline-block;
+  font-size: 22px;
+  padding-left: 3px;
+}
+
+#social a, #social a:visited {
+  color: #999;
+  -webkit-transition:color 200ms ease-in;
+  -moz-transition:color 200ms ease-in;
+  -o-transition:color 200ms ease-in;
+}
+
+#social a:hover, #social a:visited:hover {
+  color: #423F37;
+  text-decoration: none;
+}
+
+.gray {
+color: #999;
+}
