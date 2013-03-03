@@ -43,6 +43,13 @@
   color: #999;
 }
 
+#date-header p {
+  font-style: italic;
+}
+
+#posts li {
+  display: block;
+}
 
 /* Fixes for tablet size
 -------------------------------------------------- */
