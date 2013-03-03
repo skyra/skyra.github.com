@@ -1,7 +1,0 @@
----
-layout: post
-title: First Post
-category: blog
----
-
-This is the first post. Just testing the functionality
