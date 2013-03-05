@@ -61,6 +61,29 @@
 }
 
 
+/* Youtube responsive layout
+-------------------------------------------------- */
+
+@media (min-width: 600px) {
+  .youtube {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+@media (max-width: 599px) {
+  .youtube {
+    width: 100%;
+    height: 315px;
+  }
+}
+
+@media (max-width: 480px) {
+  .youtube {
+    width: 100%;
+    height: 248px;
+  }
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
