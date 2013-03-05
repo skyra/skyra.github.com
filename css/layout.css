@@ -43,12 +43,17 @@
   color: #999;
 }
 
-#date-header p {
-  font-style: italic;
-}
-
 #posts li {
   display: block;
+}
+
+#article-content p {
+  padding-top: 10px;
+}
+
+#date-header p {
+  padding-top: 0px;
+  font-style: italic;
 }
 
 /* Fixes for tablet size
