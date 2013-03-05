@@ -33,9 +33,9 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/art">Art</a></li>
-                <li><a href="http://github.com/skyra/skyra/issues">Issues</a></li>
+                <li><a href="/blog" onClick="_gaq.push(['_trackEvent', 'Nav Bar', 'Click', 'Blog']);">Blog</a></li>
+                <li><a href="/art" onClick="_gaq.push(['_trackEvent', 'Nav Bar', 'Click', 'Art']);">Art</a></li>
+                <li><a href="http://github.com/skyra/skyra/issues" onClick="_gaq.push(['_trackEvent', 'Nav Bar', 'Click', 'Issues']);">Issues</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -97,6 +97,20 @@
     <script src="/js/jquery-1.9.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/scripts.js"></script>
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38883930-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 
   </body>
 </html>
