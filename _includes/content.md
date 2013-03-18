@@ -4,7 +4,7 @@ The world would be a better, happier, more productive place if people were more 
 ### Here's where skyra comes in.
 Skýra is the Icelandic word for clarity. My hope is that by opening up and documenting my goals here, I will achieve clarity in two ways. First, I will be thoroughly thinking through what I want to do and how I should do it. Second, people who have similar goals and who are looking for someone to collaborate with can more easily find me.
 
-####*Take a look at the [issues](https://github.com/skyra/skyra/issues) to see if anything interests you and [get in touch](https://plus.google.com/104703535905863588406).*
+####*Take a look at the [issues](https://github.com/skyra/skyra/issues) to see if anything interests you and [get in touch](https://plus.google.com/104703535905863588406). Or check out my [Blog](/blog) or [Art](/art)*
 
 ### Reasons why you *should* contact me
 * You want to participate in one of my projects
