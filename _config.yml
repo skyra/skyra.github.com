@@ -1,2 +1,10 @@
 pygments: true
 permalink: '/:categories/:title'
+
+author :
+  name : Cameron Ketcham
+  email : cketcham+skyra@gmail.com
+
+production_url : http://skyra.github.io
+atom_path : /atom.xml
+rss_path : /rss.xml

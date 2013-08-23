@@ -1,35 +1,28 @@
 ---
 layout: nil
-title: skyra
+title : Atom Feed
 ---
-
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
-  <title>{{ page.title }}</title>
-  <subtitle>Let's do something!</subtitle>
-  <link href="http://skyra.github.com/"/>
-  <link type="application/atom+xml" rel="self" href="http://skyra.github.com/atom.xml"/>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
-  
-  <id>http://skyra.github.com/</id>
-  <author>
-    <name>Cameron Ketcham</name>
-  </author>
+ <title>{{ site.title }}</title>
+ <link href="{{ site.production_url }}{{ site.atom_path }}" rel="self"/>
+ <link href="{{ site.production_url }}"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.production_url }}</id>
+ <author>
+   <name>{{ site.author.name }}</name>
+   <email>{{ site.author.email }}</email>
+ </author>
 
-  {% for post in site.posts %}
-  <entry>
-    <id>http://skyra.github.com{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://skyra.github.com{{ post.url }}"/>
-    <title>{{ post.title | xml_escape }}</title>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <author>
-      <name>Cameron Ketcham</name>
-      <uri>http://skyra.github.com/</uri>
-    </author>
-    {% for category in post.categories %}<category term="{{ category | downcase }}" />{% endfor %}
-    <content type="html">{{ post.content | xml_escape }}</content>
-  </entry>
-  {% endfor %}
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="{{ site.production_url }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ site.production_url }}{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
  
 </feed>
