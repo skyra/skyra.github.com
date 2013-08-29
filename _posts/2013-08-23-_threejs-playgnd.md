@@ -1,10 +1,12 @@
 ---
 layout: post
 title: _three.js playGnd
-category: tech
+category: blog
+tag: tech
+excerpt: Take a look at this cool webGL app which lets you mess with code.
 ---
 
-checkout [http://threejsplaygnd.brangerbriz.net/gui/](http://threejsplaygnd.brangerbriz.net/gui/)
+[http://threejsplaygnd.brangerbriz.net/gui/](http://threejsplaygnd.brangerbriz.net/gui/)
 
 It's a cool way to play around with webGL and actually create something using a combination of programming and playing with sliders and options.
 

@@ -3,11 +3,9 @@ layout: default
 blog: true
 ---
 
-<article id="article-content">
-  <header id="article-header">
-    <h2>{{ page.title }}</h2>
-  </header>
-
+<article>
+  <div class="article-content">
+  <h2>{{ page.title }}</h2>
   <div id="date-header">
     <p>
       {{ page.date | date: "%b %d %Y" }}
@@ -18,7 +16,6 @@ blog: true
 
   </div>
 
-  <div id="article-content">
     {{ content }}
   </div>
 </article>

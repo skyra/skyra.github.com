@@ -1,0 +1,14 @@
+<article class="type_text" rel="{{ post.url }}">
+  <div class="article-content">
+    <!-- Text Post -->
+    <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <p>
+      {{ post.excerpt }}
+    </p>
+    <p>
+    {% assign video_id=post.video %}
+    {% include youtube.html %}
+    </p>
+    <p class="read_more_container"><a href="{{post.url}}" class="read_more">Read More</a></p>
+  </div>
+</article>

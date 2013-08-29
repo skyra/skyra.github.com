@@ -2,6 +2,7 @@
 layout: post
 title: HTML5 apps vs Native Apps
 category: blog
+tag: tech
 ---
 
 I've always felt a struggle between HTML5 apps, and native apps. There are many great apps which are written with HTML5 which use [Cordova](http://cordova.apache.org/), [jQuery Mobile](http://jquerymobile.com/), or just something like [Boostrap](http://twitter.github.com/bootstrap/). And there are equally great apps which were built for native phone clients. I think overall the choice of whether to write an app with HTML5 or to write a native app really depends on the app you want to write. But ignoring that, this is what I think about the HTML5 vs. native debate.

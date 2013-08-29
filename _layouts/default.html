@@ -1,149 +1,225 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>skyra</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html class=" js no-flexbox flexbox-legacy canvas rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio js no-flexbox flexbox-legacy canvas rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio js no-flexbox flexbox-legacy canvas rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <!-- Le styles -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/layout.css" rel="stylesheet">
-    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-image-gallery.min.css" rel="stylesheet" >
+   <!-- Basic Page Settings -->
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  </head>
+   <title>Skyra</title>
 
-  <body>
-    <div id="wrap">
-      <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="http://skyra.github.com/">skyra</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/blog" onClick="_gaq.push(['_trackEvent', 'Nav Bar', 'Click', 'Blog']);">Blog</a></li>
-                <li><a href="/art" onClick="_gaq.push(['_trackEvent', 'Nav Bar', 'Click', 'Art']);">Art</a></li>
-                <li><a href="/tech" onClick="_gaq.push(['_trackEvent', 'Nav Bar', 'Click', 'Tech']);">Tech</a></li>
-                <li><a href="http://github.com/skyra/skyra/issues" onClick="_gaq.push(['_trackEvent', 'Nav Bar', 'Click', 'Issues']);">Issues</a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </div>
-      </div>
+   <meta name="author" content="Skyra">
+   <meta name="description" content="Skyra is the creation of artist and developer Cameron Ketcham">
 
-      <div class="container">
-        <div class="container-fluid">
-          <div class="row-fluid">
-            <div class="span2">
-              <a id="avatar" href="/"></a>
+   <link rel="shortcut icon" href="http://www.gravatar.com/avatar/715006648eff9b58c9fa75096b775691?s=128">
+   <link rel="apple-touch-icon" href="http://www.gravatar.com/avatar/715006648eff9b58c9fa75096b775691?s=128">
+   <link rel="alternate" type="application/rss+xml" href="http://skyra.github.io/rss">
 
-              <ul id="social">
-                <li>
-                  <a href="#" id="sidebar-call" class="icon-phone-sign" title="Give me a call" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Call']);"></a>
-                </li>
+   <!-- Main Style Settings -->
 
-                <li>
-                  <a href="https://plus.google.com/104703535905863588406" id="sidebar-google-plus" class="icon-google-plus-sign" title="Find me on Google+" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'GooglePlus']);"></a>
-                </li>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                <li>
-                  <a href="http://twitter.com/cketcham" id="sidebar-twitter" class="icon-twitter-sign" title="You should follow me" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Twitter']);"></a>
-                </li>
+   <link href="/css/font.css" rel="stylesheet" type="text/css">
 
-                <li>
-                  <a href="http://github.com/cketcham" id="sidebar-github" class="icon-github" title="I share and fork code here" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Github']);"></a>
-                </li>
-              </ul>
-            
-              <div id="call-widget" style="display: none">
-                <object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=6735a6ed31f0f433fc7f5742a9dc8269864f128e&style=0" /></object>
-              </div>
+   <script src="/js/modernizr.js"></script>
 
-              <ul id="me">
-                <li>Cameron Ketcham</span></li>
-                <li class="gray">Let's do something!</li>
-              </ul>
-            </div>
-            <div class="span10">
-              {{content}}
-            </div>
-          </div>
-        </div>
+   <link rel="stylesheet" href="/css/precrafted-social.css">
+   <link rel="stylesheet" href="/css/fixie-styles.css">
 
-      </div> <!-- /container -->
-      <div id="push"></div>
-    </div>
+   <style type="text/css">
 
-    <div id="footer">
-        <div class="container">
-            <p class="muted credit">skyra ideas by Cameron Ketcham.<a href="http://feeds.feedburner.com/Skyra" rel="alternate" type="application/rss+xml"> <img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="border:0"/></a></p>
-        </div>
-    </div>
+		body {
+			background: #f5f5f5;
+			color: #7f8c8d;
+		}
 
-    <!-- modal-gallery is the modal dialog used for the image gallery -->
-    <div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
-        <div class="modal-header">
-            <a class="close" data-dismiss="modal">&times;</a>
-            <h3 class="modal-title"></h3>
-        </div>
-        <div class="modal-body"><div class="modal-image"></div></div>
-        <div class="modal-footer">
-            <a class="btn modal-download" target="_blank">
-                <i class="icon-download"></i>
-                <span>Download</span>
-            </a>
-            <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000">
-                <i class="icon-play icon-white"></i>
-                <span>Slideshow</span>
-            </a>
-            <a class="btn btn-info modal-prev">
-                <i class="icon-arrow-left icon-white"></i>
-                <span>Previous</span>
-            </a>
-            <a class="btn btn-primary modal-next">
-                <span>Next</span>
-                <i class="icon-arrow-right icon-white"></i>
-            </a>
-        </div>
-    </div>
+		body {
+			background: url('/img/tumblr_static_shattered.jpg') center center no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			background-attachment: fixed;
+		}
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="http://blueimp.github.com/JavaScript-Load-Image/load-image.min.js"></script>
-    <script src="/js/bootstrap-image-gallery.min.js"></script>
-    <script src="/js/scripts.js"></script>
-    
+		body {
+			-webkit-background-size: auto;
+			-moz-background-size: auto;
+			-o-background-size: auto;
+			background-size: auto;
+			background-repeat: repeat;
+			background-attachment: scroll;
+			background-position: top left;
+			background-attachment: fixed;
+		}
+		
 
-    <script type="text/javascript">
+		header .logo h1 {
+			color: #2c3e50;
+			border-color: #2c3e50;
+		}
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-38883930-1']);
-      _gaq.push(['_trackPageview']);
+		header .logo h1 a {
+			color: #2c3e50;
+		}
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+		header .description {
+			color: #7f8c8d
+		}
 
-    </script>
+		article .article-content {
+			background: #ffffff;
+		}
 
-  </body>
-</html>
+		h1, h2, h3, h4, h5, article.type_quote .quote {
+			color: #2c3e50;
+		}
+
+		a {
+			color: #f5ac5d;
+		}
+
+		a:hover {
+			color: #2c3e50;
+		}
+
+		nav ul li a, footer .load-more, footer .scroll-top, #infscr-loading, .page-loading {
+			background: #ffffff;
+			color: #f5ac5d;
+		}
+
+		nav ul li a:hover, nav ul li:hover span, footer .load-more:hover, footer .scroll-top:hover {
+			background: #f5ac5d;
+			color: #ffffff;
+		}
+
+		article blockquote, article.type_chat .line, article.type_answer .answer-person {
+			border-color: #f5f5f5;
+		}
+
+		article.type_link .the-link {
+			background: #f5ac5d;
+			color: #ffffff;
+		}
+
+		article.type_link .the-link:hover {
+			background: #2c3e50;
+		}
+
+		::-moz-selection { background: #f5ac5d; color: #ffffff; text-shadow: none; }
+		::selection { background: #f5ac5d; color: #ffffff; text-shadow: none; }
+
+		
+
+		
+
+   </style>
+
+   <style type="text/css">
+
+	  
+
+   </style>
+
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
+<!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. -->
+<!-- Read more: http://ogp.me/ -->
+<meta property="og:title" content="Skyra">
+<meta property="og:url" content="http://skyra.github.io/">
+<meta property="og:description" content="Skyra is the creation of artist and developer Cameron Ketcham.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://www.gravatar.com/avatar/715006648eff9b58c9fa75096b775691?s=128">
+<!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS -->
+<meta charset="utf-8">
+<meta name="twitter:site" content="@cketcham">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Skyra">
+<meta name="twitter:description" content="Skyra is the creation of artist and developer Cameron Ketcham.">
+<meta name="twitter:image" content="http://www.gravatar.com/avatar/715006648eff9b58c9fa75096b775691?s=128">
+<!-- END TWITTER TAGS -->
+
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<meta name="keywords" content="skyra, cketcham, photos, kinect, tech">
+
+<body>
+
+<header>
+
+	<div class="center">
+		<div class="centered">
+			<div class="avatar">
+				<a href="/" title="Skyra" class="avatar circle">
+					<img src="http://www.gravatar.com/avatar/715006648eff9b58c9fa75096b775691?s=128" alt="Skyra" class="default">
+				</a>
+			</div>
+
+			<div class="logo">
+				<h1><a href="/" title="Skyra">Skyra</a></h1>
+			</div>
+
+			
+			<p class="description">Skyra is the creation of artist and developer Cameron Ketcham.</p>
+
+			<nav>
+				<ul>
+
+					<li><a href="http://skyra.github.io/ask" title="Ask us anything">Ask me anything</a></li>
+
+				</ul>
+
+				<ul class="social-menu">
+					
+						<li><a href="http://twitter.com/cketcham" target="_blank" title="Twitter"><i class="social-twitter"></i></a></li>
+						<li><a href="mailto:cketcham+skyra@gmail.com" target="_blank" title="Email"><i class="social-mail"></i></a></li>
+						<li><a href="https://plus.google.com/104703535905863588406" target="_blank" title="Google+"><i class="social-gplus"></i></a></li>
+						<li><a href="http://github.com/cketcham" target="_blank" title="Github"><i class="social-github"></i></a></li>
+						<li><a href="http://www.youtube.com/user/obikwiet" target="_blank" title="YouTube"><i class="social-youtube"></i></a></li>
+					
+				</ul>
+
+			</nav>
+
+		</div> 	 	 	   
+
+	</div>
+</header>
+
+
+<section class="the-posts index">
+  {{content}}
+</section>
+
+<footer>
+
+	
+	<a href="http://skyra.github.io/#top" class="scroll-top">▲</a>
+
+	<div class="footer-border">
+
+		<span>See cleary</span>
+		<span>© Skyra 2013</span>
+
+		<div class="credit">
+			<a href="http://precrafted.com/" title="Precrafted" target="_blank">Thanks to Precrafted for the base theme</a>
+		</div>
+
+	</div> 	 	 	   
+
+</footer> 	 	 	   
+
+
+
+
+<!-- Javascript Assets -->
+
+<script src="/js/jquery.min.js"></script>
+
+<script src="/js/fixie-plugins.js"></script>
+
+<script src="/js/fixie-app.js"></script>
+
+</body></html>

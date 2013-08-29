@@ -2,13 +2,15 @@
 layout: post
 title: Life of a Tree
 category: art
+tags: [art, kinect]
+excerpt: I brought my ideas for tree generation and skeleton sensing with the Kinect to make a piece for Bushwick First Friday. Hopefully you got a chance to check it out.
 ---
 
 This is my second piece for **[Bushwick First Friday](https://www.facebook.com/BushwickFirstFriday)**. The theme *Awakening*, was inspired by the coming of Spring.
 
 Here are the previous blog posts related to this piece if you are interested in reading them
-* [http://skyra.github.io/blog/processing/Processing-Tree-Generation](http://skyra.github.io/blog/processing/Processing-Tree-Generation)
-* [http://skyra.github.io/blog/processing/Kinect-Processing](http://skyra.github.io/blog/processing/Kinect-Processing/)
+* [Processing Tree Generation]({% post_url 2013-03-10-Processing-Tree-Generation %})
+* [Kinect Processing]({% post_url 2013-03-17-Kinect-Processing %})
 
 Hopefully you came and had a chance to play with it!
 

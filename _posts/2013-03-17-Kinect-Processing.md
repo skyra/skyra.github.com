@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to get Kinect Data into Processing
-categories: [tech, processing]
+category: blog
+tags: [tech, processing]
 ---
 
 The Kinect is an awesome tool to get skeleton data. [Processing](http://processing.org) is an awesome tool for creating visualizations. It is only natural to wonder what one can do with Kinect data inside of processing. If you are on Windows, you are in luck. The Kinect for Windows SDK is available and there are instructions on [OpenNI.org](http://www.openni.org/) which should help you get started. If you are instead on linux or a mac (like me), follow these instructions to get started.

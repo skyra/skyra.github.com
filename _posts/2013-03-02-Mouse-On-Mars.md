@@ -2,6 +2,7 @@
 layout: post
 title: Mouse On Mars
 category: blog
+tag: music
 ---
 
 I haven't listened to Mouse on Mars in ages, but they used to be one of my favorite bands. Mouse on Mars is a duo based out of Germany made up of Jan St. Werner and Andi Toma. They have been making electronic music since 1993. I was first introduced to them by an electronic music teacher I had while I was in high school. I instantly fell in love with the glitchy electronic sound they create. Two of my favorite songs are *Wipe That Sound* and *Duul*.
@@ -22,4 +23,4 @@ Then Mouse on Mars took the stage. They played a lot of new songs which I hadn't
 {% assign video_id="E27_3IHz2HA" %}
 {% include youtube.html %}
 
-Its been at least 6 years since I really listened to anything they made, but I really enjoyed the show overall. They had a very electronic feel, sort of like siman mobile disco, but a bit rougher at times. They used a lot of really cool effects and I really loved the vocals. Check out a few more pictures of the show [here](/art/Mouse-On-Mars-Pictures).
+Its been at least 6 years since I really listened to anything they made, but I really enjoyed the show overall. They had a very electronic feel, sort of like siman mobile disco, but a bit rougher at times. They used a lot of really cool effects and I really loved the vocals. Check out a few more pictures of the show [here]({% post_url 2013-03-02-Mouse-On-Mars-Pictures %}).

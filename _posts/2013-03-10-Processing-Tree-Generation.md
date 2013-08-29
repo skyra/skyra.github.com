@@ -1,7 +1,10 @@
 ---
 layout: post
 title: Tree Generation in Processing
-categories: [tech, processing]
+category: blog
+tag: [tech, processing]
+excerpt: How to randomly generate a moveable tree using Processing
+video: MiZYfwMA_Ao
 ---
 
 I'm working on a [processing](http://processing.org) sketch which generates trees of different heights randomly. I started from this sketch: [http://www.openprocessing.org/sketch/2235](http://www.openprocessing.org/sketch/2235). I like the way it looks, but I want something that will grow and is animatable.
