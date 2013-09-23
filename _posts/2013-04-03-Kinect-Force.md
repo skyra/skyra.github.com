@@ -14,4 +14,4 @@ I set up a simple particle system with various forces and added some attraction 
 {% assign video_id="KLACA8kUFCc" %}
 {% include youtube.html %}
 
-If you are interested in trying it out yourself, take a look at the source code. Take a look at the `kinect_force` example in the [ProcessingKinectOSC](https://github.com/cketcham/ProcessingKinectOSC) repository.
+If you are interested in trying it out yourself, get the OSCeletonWrapper processing library and the code for this example here: [https://github.com/cketcham/kinect_force](https://github.com/cketcham/kinect_force)
