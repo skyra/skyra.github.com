@@ -3,7 +3,7 @@ layout: post
 title: OSCeletonWrapper
 category: blog
 tags: [tech, processing, kinect]
-excerpt: [OSCeletonWrapper](https://github.com/cketcham/OSCeletonWrapper) is a processing library which wraps OSCeleton and makes it easy to use Skeleton data inside processing. Look here if you are just getting started with the kinect.
+excerpt: OSCeletonWrapper is a processing library which wraps OSCeleton and makes it easy to use Skeleton data inside processing. Look here if you are just getting started with the kinect.
 ---
 
 #### Getting Started
