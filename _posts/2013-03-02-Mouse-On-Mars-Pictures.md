@@ -5,4 +5,4 @@ category: art
 image: http://i.imgur.com/nFEyFX2h.jpg
 ---
 
-<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/fsv7h/embed"></iframe>
+<div id="plusgallery" data-album-id="fsv7h" data-type="imgur"></div>
