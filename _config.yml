@@ -8,3 +8,4 @@ author :
 production_url : http://skyra.github.io
 atom_path : /atom.xml
 rss_path : /rss.xml
+markdown: kramdown
