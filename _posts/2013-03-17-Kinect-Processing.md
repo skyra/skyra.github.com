@@ -1,28 +1,16 @@
 ---
 layout: post
-title: How to get Kinect Data into Processing
+title: How to setup Microsoft Kinect on OS X 10.10 with Processing
 category: blog
 tags: [tech, processing]
 ---
 
-The Kinect is an awesome tool to get skeleton data. [Processing](http://processing.org) is an awesome tool for creating visualizations. It is only natural to wonder what one can do with Kinect data inside of processing. If you are on Windows, you are in luck. The Kinect for Windows SDK is available and there are instructions on [OpenNI.org](http://www.openni.org/) which should help you get started. If you are instead on linux or a mac (like me), follow these instructions to get started.
+The Kinect is an awesome tool to get skeleton data. [Processing](http://processing.org) is an awesome tool for creating visualizations. Combined they can be used to make cool interactive visualizations.
 
-I decided to use OSC messages to send data to processing. There are at least 3 ways to get osc messages into it. One which is the easiest is to use [Synapse for Kinect](http://synapsekinect.tumblr.com/). Synapse is a standalone app which will send osc messages about joint positions. The problem I had with Synapse was I could not figure out if it was sending user information so I was only able to use one skeleton at a time. Another way is to use [jit-openni](http://hidale.com/jit-openni/) which can send OSC messages through MaxMSP. This is less useful for me since it adds a dependency on MaxMSP which we don't need. Although maybe it will be useful for someone else who wants to use it. The third is to use [OSCeleton](https://github.com/Sensebloom/OSCeleton). OSCeleton sends skeleton data for multiple users as OSC messages. Exactly what I need.
+Since OpenNI has been taken down, the best source I've found for setting up the kinect is here: [http://blog.nelga.com/setup-microsoft-kinect-on-mac-os-x-10-9-mavericks/](http://blog.nelga.com/setup-microsoft-kinect-on-mac-os-x-10-9-mavericks/)
 
-OSCeleton has four requirements for it to work properly.
-* libusb
-* OpenNI SDK v1.5.4.0
-* OpenNI-Compliant Sensor Driver v5.1.2.1
-* NiTE v1.5.2.21
+Once everything is installed, you can use [OSCeleton](https://github.com/Sensebloom/OSCeleton) to send OSC messages to processing.
 
-The instructions for installing are a little outdated and confusing, but this is what I did to get things to work.
+You can use [OSCeletonWrapper](https://github.com/cketcham/OSCeletonWrapper) to help read those messages in processing.
 
-The first thing I did was to check `brew`. [Homebrew](https://github.com/mxcl/homebrew) is my favorite package manager for osx. It keeps everything nice and tidy. It also has libfreenect and libusb. So it makes installation of those two packages a breeze. To read data from the Kinect sensor, we need libusb.
-
-{% highlight bash %}
-$ brew install libusb --universal
-{% endhighlight %}
-
-After installing libusb, the first mistake I made was to try to install OpenNI 2.1. Apparently with version 2.0 of OpenNI support for the Kinect was removed from os x because the Kinect for Windows SDK was more tightly integrated into the project. There are a few attempts to build OpenNI 2.1 with [libfreenect](https://github.com/OpenKinect/libfreenect) such as [OpenNI2-FreenectDriver](https://github.com/piedar/OpenNI2-FreenectDriver), but I decided to go with the older versions of OpenNI. You can download those versions from here: [http://www.openni.org/openni-sdk/openni-sdk-history-2](http://www.openni.org/openni-sdk/openni-sdk-history-2). This is where you can download `OpenNI SDK v1.5.4.0`, `OpenNI-Compliant Sensor Driver v5.1.2.1`, and `NiTE v1.5.2.21`. Alternatively you can download the source for each, build it and install. In each file that you download is an `install.sh` script that you need to run as root to install the required software.
-
-Once all the dependencies are installed, plug in your kinect and run osceleton. I have released a library for Processing which lets you get skeleton data from processing as a list of skeletons. more info here: [OSCeletonWrapper]({% post_url 2013-09-22-OSCeletonWrapper %})
+more info [here]({% post_url 2013-09-22-OSCeletonWrapper %})
