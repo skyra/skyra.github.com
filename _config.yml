@@ -1,4 +1,4 @@
-pygments: true
+highlighter: rouge
 permalink: '/:categories/:title'
 
 author :
