@@ -134,13 +134,26 @@
                 }
                 return {error: args[1] + ": No such post"}
             },
+            open: function(args, report) {
+                if (context.currentDir != "") {
+                    directory = context.files[context.currentDir];
+                    for (i=0; i<directory.length; i++) {
+                        if (directory[i].id == args[1]) {
+                            var win = window.open(directory[i].url, '_blank');
+                            win.focus();
+                            return "opened new window";
+                        }
+                    }
+                }
+                return {error: args[1] + ": No such post"}
+            },
             normal: function() {
                 var win = window.open('/blog.html', '_blank');
                 win.focus();
                 return "opened new window";
             },
             help: function() {
-                return "commands you can run: cd, pwd, ls, cat, normal";
+                return "commands you can run: cd, pwd, ls, cat, open, normal";
             }
         }
   };

@@ -31,6 +31,7 @@
 			{% assign id = post.url | remove_first: "/" | remove_first: post.category | remove_first: "/" %}
 			{
   				id: "{{ id }}",
+          url: "{{ post.url }}",
   				path: "{{ post.path }}"
 			},
   			{% endif %}
@@ -46,6 +47,7 @@
 			{% assign id = post.url | remove_first: "/" | remove_first: post.category | remove_first: "/" %}
   			{
   				id: "{{ id }}",
+          url: "{{ post.url }}",
 				path: "{{ post.path }}"
 			},
   			{% endif %}
