@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+          "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>{{page.title}}</title>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.console.js"></script>
+    <script type="text/javascript" src="js/skyra-cmd.js"></script>
+
+{% capture directories %}
+[
+	"all",
+	{% for item in site.tags %}
+		"{{ item[0] }}",
+	{% endfor %}
+	{% for item in site.categories %}
+		"{{ item[0] }}",
+	{% endfor %}
+]
+{% endcapture %}
+
+{% capture fileDirectory %}
+	{ 
+	{% for category in site.categories %}
+ 		{% assign c = category | first %}
+		{% assign posts = category | last %}
+		{{c}}:[
+		{% for post in posts %}
+			{% if post.category == c %}
+			{% assign id = post.url | remove_first: "/" | remove_first: post.category | remove_first: "/" %}
+			{
+  				id: "{{ id }}",
+  				path: "{{ post.path }}"
+			},
+  			{% endif %}
+		{% endfor %}
+  		],
+	{% endfor %}
+	{% for tag in site.tags %}
+ 		{% assign t = tag | first %}
+		{% assign posts = tag | last %}
+		{{t}}:[
+		{% for post in posts %}
+			{% if post.tags contains t %}
+			{% assign id = post.url | remove_first: "/" | remove_first: post.category | remove_first: "/" %}
+  			{
+  				id: "{{ id }}",
+				path: "{{ post.path }}"
+			},
+  			{% endif %}
+		{% endfor %}
+  		],
+	{% endfor %}
+	}
+{% endcapture %}
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+      	$.fn.skyracmd({
+      		currentDir : "",
+      		directories : {{directories}},
+      		files : {{fileDirectory}},
+      	});
+       });
+    </script>
+    <style type="text/css" media="screen">
+      html, body, .console1 {
+      	width:100%; height:100%; margin:0px;
+      }
+      div.console1 { word-wrap: break-word; }
+      /* First console */
+      div.console1 { font-size: 14px }
+      div.console1 div.jquery-console-inner
+       { width:100%; height:100%; background:#333; padding:0.5em;
+         overflow:auto }
+      div.console1 div.jquery-console-prompt-box
+       { color:#fff; font-family:monospace; }
+      div.console1 div.jquery-console-focus span.jquery-console-cursor
+       { background:#fefefe; color:#333; font-weight:bold }
+      div.console1 div.jquery-console-message
+       { color:#fff; font-family:monospace;
+         padding:0.1em; }
+      div.console1 div.jquery-console-message-error
+       { color:#ef0505; font-family:sans-serif; font-weight:bold;
+         padding:0.1em; }
+      div.console1 div.jquery-console-message-value
+       { color:#1ad027; font-family:monospace;
+         padding:0.1em; }
+      div.console1 div.jquery-console-message-type
+       { color:#52666f; font-family:monospace;
+         padding:0.1em; }
+      div.console1 span.jquery-console-prompt-label { font-weight:bold }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <p>
+        <strong>Please enable JavaScript or upgrade your browser.</strong>
+      </p>
+    </noscript>
+  </body>
+</html>

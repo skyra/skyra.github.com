@@ -2,7 +2,7 @@
 layout: post
 title: Life of a Tree
 category: art
-tags: [art, kinect]
+tags: [kinect]
 excerpt: I brought my ideas for tree generation and skeleton sensing with the Kinect to make a piece for Bushwick First Friday. Hopefully you got a chance to check it out.
 ---
 

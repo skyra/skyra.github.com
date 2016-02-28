@@ -1,0 +1,19 @@
+---
+layout: default
+title: skyra
+---
+
+<div class="posts-holder posts-grid">
+	<div class="grid-sizer"></div>
+{% for post in site.posts %}
+  {% if post.image %}
+    {% include image.html %}
+  {% elsif post.images %}
+    {% include image.html %}
+  {% elsif post.video %}
+    {% include video.html %}
+  {% else %}
+    {% include text.html %}
+  {% endif %}
+{% endfor %}
+</div>
