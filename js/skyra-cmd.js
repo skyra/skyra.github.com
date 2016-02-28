@@ -77,8 +77,8 @@
             }
 
             return [{msg: "-skyra: " + args[0] + ": " + errorMsg,
-                            className:"jquery-console-message-error"}];
-         }
+            className:"jquery-console-message-error"}];
+        }
 
         var commands = {
             cd: function(args) {
@@ -156,5 +156,5 @@
                 return "commands you can run: cd, pwd, ls, cat, open, normal";
             }
         }
-  };
+    };
 })(jQuery);

@@ -10,65 +10,65 @@
 
 {% capture directories %}
 [
-	"all",
-	{% for item in site.tags %}
-		"{{ item[0] }}",
-	{% endfor %}
-	{% for item in site.categories %}
-		"{{ item[0] }}",
-	{% endfor %}
+  "all",
+  {% for item in site.tags %}
+    "{{ item[0] }}",
+  {% endfor %}
+  {% for item in site.categories %}
+    "{{ item[0] }}",
+  {% endfor %}
 ]
 {% endcapture %}
 
 {% capture fileDirectory %}
-	{ 
-	{% for category in site.categories %}
- 		{% assign c = category | first %}
-		{% assign posts = category | last %}
-		{{c}}:[
-		{% for post in posts %}
-			{% if post.category == c %}
-			{% assign id = post.url | remove_first: "/" | remove_first: post.category | remove_first: "/" %}
-			{
-  				id: "{{ id }}",
-          url: "{{ post.url }}",
-  				path: "{{ post.path }}"
-			},
-  			{% endif %}
-		{% endfor %}
-  		],
-	{% endfor %}
-	{% for tag in site.tags %}
- 		{% assign t = tag | first %}
-		{% assign posts = tag | last %}
-		{{t}}:[
-		{% for post in posts %}
-			{% if post.tags contains t %}
-			{% assign id = post.url | remove_first: "/" | remove_first: post.category | remove_first: "/" %}
-  			{
-  				id: "{{ id }}",
-          url: "{{ post.url }}",
-				path: "{{ post.path }}"
-			},
-  			{% endif %}
-		{% endfor %}
-  		],
-	{% endfor %}
-	}
+{ 
+{% for category in site.categories %}
+  {% assign c = category | first %}
+  {% assign posts = category | last %}
+  {{c}}:[
+  {% for post in posts %}
+    {% if post.category == c %}
+      {% assign id = post.url | remove_first: "/" | remove_first: post.category | remove_first: "/" %}
+      {
+        id: "{{ id }}",
+        url: "{{ post.url }}",
+        path: "{{ post.path }}"
+      },
+    {% endif %}
+  {% endfor %}
+  ],
+{% endfor %}
+{% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  {{t}}:[
+  {% for post in posts %}
+    {% if post.tags contains t %}
+      {% assign id = post.url | remove_first: "/" | remove_first: post.category | remove_first: "/" %}
+      {
+        id: "{{ id }}",
+        url: "{{ post.url }}",
+        path: "{{ post.path }}"
+      },
+    {% endif %}
+  {% endfor %}
+  ],
+{% endfor %}
+}
 {% endcapture %}
 
     <script type="text/javascript">
       $(document).ready(function(){
-      	$.fn.skyracmd({
-      		currentDir : "",
-      		directories : {{directories}},
-      		files : {{fileDirectory}},
-      	});
+        $.fn.skyracmd({
+          currentDir : "",
+          directories : {{directories}},
+          files : {{fileDirectory}},
+        });
        });
     </script>
     <style type="text/css" media="screen">
       html, body, .console1 {
-      	width:100%; height:100%; margin:0px;
+        width:100%; height:100%; margin:0px;
       }
       div.console1 { word-wrap: break-word; }
       /* First console */
