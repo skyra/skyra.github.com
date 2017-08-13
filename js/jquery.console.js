@@ -269,7 +269,7 @@
         typer.css('position', 'fixed').focus();
       }
       scrollToBottom();
-      return false;
+      return true;
     });
 
     ////////////////////////////////////////////////////////////////////////
@@ -589,7 +589,7 @@
     function message(msg,className) {
       var mesg = $('<div class="jquery-console-message"></div>');
       if (className) mesg.addClass(className);
-      mesg.filledText(msg).hide();
+      mesg.append(msg).hide();
       inner.append(mesg);
       mesg.show();
     };

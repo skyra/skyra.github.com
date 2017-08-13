@@ -61,7 +61,7 @@
             autofocus:true,
             animateScroll:true,
             promptHistory:true,
-            welcomeMessage:'Welcome to Skyra'
+            welcomeMessage:'Welcome to Skyra. <br><br>Type help to get more information or view the most recent post <a target="_blank" href="' + context.files['all'][0].url + '">here</a>'
         });
 
         var parse = function(args, report) {
@@ -69,7 +69,7 @@
             var errorMsg = "command not found";
             if (command) {
                 var result = command(args, report);
-                if (result.error) {
+                if (result && result.error) {
                     errorMsg = result.error;
                 } else {
                     return result;
